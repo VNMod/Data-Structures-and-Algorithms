@@ -18,4 +18,4 @@ This repository contains:
   cmake .
   ```
   
-- This should create all the necessary configuration files and the executable. Each ADT should have a "unittests" file that tests the ADT and by running the "make" command, the executable for this unittests file is created.
+- This should create all the necessary configuration files and the executable. Each ADT should have a "unittests.cpp" file that tests the ADT and by running the   ```make  ``` command, the executable for this "unittests" file is created.
