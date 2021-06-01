@@ -13,6 +13,8 @@ This repository contains:
 
 - Double Linked Lists
 - Dynamic Memory Allocation and Pointers
+- Catch Unit Test Framework
+- CMake
 
 ### dNode:
 
