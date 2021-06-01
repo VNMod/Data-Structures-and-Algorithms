@@ -8,11 +8,14 @@ This repository contains:
 ## Running the files using CMake (on Mac)
 
 - Add CMake to the path variable by running the following command in the Terminal:
-  
+  '''
   PATH="/Applications/CMake.app/Contents/bin":"$PATH
+  '''
   
 - Then, create the build files with this command:
 
+  '''
   cmake .
+  '''
   
 - This should create all the necessary configuration files and the executable. Each ADT should have a "unittests" file that tests the ADT and by running the "make" command, the executable for this unittests file is created.
