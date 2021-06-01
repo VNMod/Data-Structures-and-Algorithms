@@ -12,7 +12,7 @@ This repository contains:
   PATH="/Applications/CMake.app/Contents/bin":"$PATH
   ```
   
-- Then, create the build files with this command:
+- Then, generate the build and configuration files (using the CMakeLists.txt file that enlists the the source, targets and executables) with this command:
 
   ```
   cmake .
