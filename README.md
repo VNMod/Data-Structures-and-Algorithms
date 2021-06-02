@@ -2,7 +2,8 @@
 
 This repository contains:
 
-- a list of Abstract Data Types (ADTs) for various data structures. They were written as per the requirements for Virginia Tech's (ECE2564) Data Structure &amp; Algorithms class projects.
+- a list of Abstract Data Type (ADT) implementations for various data structures: [Double Linked List](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Double%20Linked%20List%20ADT), [Stacks](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Stack%20ADT), [Double Ended Queues](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Double%20Ended%20Queue%20ADT) and [Treaps (Heap Trees)](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Treap%20ADT).
+- They were written as per the requirements for Virginia Tech's (ECE2564) Data Structure &amp; Algorithms class projects.
 - a list of projects that implement popular algorithms and the above mentioned ADTs.
 
 ## Running the files using CMake (on Mac)
@@ -19,3 +20,5 @@ This repository contains:
   ```
   
 - This should create all the necessary configuration files and the executable. Each ADT should have a "unittests.cpp" file that tests the ADT and by running the   ```make``` command, the executable for this "unittests" file is created.
+
+- Then run the generated executable. So, you should technically be running ```./unittests```. This runs and checks if all the unit test cases have passed as required.
