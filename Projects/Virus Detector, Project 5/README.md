@@ -33,4 +33,27 @@ This program stores all the viruses written down in a .txt file (here, db.txt) a
 - The implemented Treap ADT allows a user to check if a Treap is empty, to search for a particular key and the associated node, to insert a node, to remove a node and obtain the height of a treap.
 - The detailed code and implementation can be found in the **treap_bst.txx** file.
 
-### Running it locally:
+### Running it locally (on the Mac Terminal):
+
+- Add CMake to the path variable by running the following command in the Terminal:
+  ```
+  PATH="/Applications/CMake.app/Contents/bin":"$PATH
+  ```
+  
+- Then, generate the build and configuration files (it uses the CMakeLists.txt file that enlists the the source, targets and executables) with this command:
+
+  ```
+  cmake .
+  ```
+  
+- This should create all the necessary configuration files and the executable. This project should have a **detect.cpp** file that detects the viruses and by running the   ```make``` command, the executable for this **detect.cpp** file is created.
+
+- Then run the generated executable. You run the detect executable as follows:
+
+  ```
+  ./detect list binfile
+  ```
+  
+  Here, list would be **db.txt** that contains the list of viruses and binfile would be **sample.dat**
+  
+  
