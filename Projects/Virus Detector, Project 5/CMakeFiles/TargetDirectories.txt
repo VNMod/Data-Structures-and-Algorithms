@@ -1,0 +1,3 @@
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/CMakeFiles/rebuild_cache.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/CMakeFiles/edit_cache.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/CMakeFiles/detect.dir

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/abstract_bst.hpp
+
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/detect.cpp
+treap_bst.hpp
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/treap_bst.hpp
+fstream
+-
+string
+-
+
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/treap_bst.hpp
+random
+-
+vector
+-
+abstract_bst.hpp
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/abstract_bst.hpp
+treap_bst.txx
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/treap_bst.txx
+
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/treap_bst.txx
+treap_bst.hpp
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Virus Detector, Project 5/treap_bst.hpp
+algorithm
+-
+stack
+-
+stdexcept
+-
+iostream
+-
+
