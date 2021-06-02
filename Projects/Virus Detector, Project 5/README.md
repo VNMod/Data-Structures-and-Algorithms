@@ -54,7 +54,7 @@ This program stores all the viruses written down in a .txt file (here, db.txt) a
   ./detect list binfile
   ```
   
-  Here, list would be **db.txt** that contains the list of viruses.
-  And, binfile would be **sample.dat** which may possibly contain viruses within bytes of data.
+  Here, 'list' would be **db.txt** that contains the list of viruses.
+  And, 'binfile' would be **sample.dat** which may possibly contain viruses within bytes of data.
   
   
