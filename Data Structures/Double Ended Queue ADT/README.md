@@ -27,8 +27,8 @@ The Deque class supports:
 - a method to peek/view the back most item of the deque without removal
 - a method to peek/view the front most item of the deque without removal.
 
-*Note: if the limit of the Deque is reached, then a growing strategy has been employed where the limit size doubles so that more items can be enqueued onto the Queue.
+*Note: if the limit of the Deque is reached, then a growing strategy has been employed where the limit size doubles so that more items can be enqueued onto the Queue.*
 
-Also note:
+*Also note:*
 
-Back of the Deque ---------> Front of the Deque*
+*Back of the Deque ---------> Front of the Deque.*
