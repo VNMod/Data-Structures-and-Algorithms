@@ -2,7 +2,7 @@
 
 This repository contains:
 
-- a dNode class for each of a double linked list, i.e. it contains a pointer to the next and previous node.
+- a dNode class for each node of a double linked list, i.e. it contains a pointer to the next and previous node.
 - a dLinkedList class that implements the double (doubly) linked list that derives from a virtual class called ListInterface.
 
 ## OVERVIEW:
