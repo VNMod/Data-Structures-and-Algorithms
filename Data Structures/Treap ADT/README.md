@@ -13,6 +13,7 @@ This repository contains:
 - Treap (Tree Heap) ADT
 - Balanced Search Trees
 - Heaps
+- Left and Right rotation (to maintain Heap property) during insertion and deletion.
 
 ### TreapBST:
 
