@@ -1,0 +1,5 @@
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Data Structures/Stack ADT/CMakeFiles/test.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Data Structures/Stack ADT/CMakeFiles/submission.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Data Structures/Stack ADT/CMakeFiles/rebuild_cache.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Data Structures/Stack ADT/CMakeFiles/edit_cache.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Data Structures/Stack ADT/CMakeFiles/unittests.dir
