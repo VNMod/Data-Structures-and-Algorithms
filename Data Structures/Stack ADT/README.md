@@ -25,3 +25,5 @@ The Stack class supports:
 - a method to pop/remove an item off the stack
 - a method to peek/view the topmost item of the stack without removal
 - a method to clear (empty) the stack.
+
+### Note: if the limit of the Stack is reached, then a growing strategy has been employed where the limit size doubles so that more items can be pushed on to the stack.
