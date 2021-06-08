@@ -40,7 +40,7 @@ This program stores all the viruses written down in a .txt file (here, db.txt) a
   PATH="/Applications/CMake.app/Contents/bin":"$PATH
   ```
   
-- Then, generate the build and configuration files (it uses the CMakeLists.txt file that enlists the the source, targets and executables) with this command:
+- Then, generate the build and configuration files (it uses the CMakeLists.txt file that enlists the source, targets and executables) with this command:
 
   ```
   cmake .
