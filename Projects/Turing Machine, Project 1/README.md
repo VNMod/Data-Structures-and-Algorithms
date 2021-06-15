@@ -1,15 +1,15 @@
 # virus_detector
 
-### Date: December 2020
+### Date: September 2020
 
 ## Task:
 
-This program stores all the viruses written down in a .txt file (here, db.txt) and then determines if a given binary file contains any of these viruses/malware.
+This program simulates a simple Turing Machine that solves a particuar algorithm.
 
 ## Criteria:
 
-* Using a Treap and BST (Binary Search Trees) ADT [implemented here](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Treap%20ADT) to store a list of known viruses.
-* Appropriately parsing through a binary file for viruses and reporting them, if any.
+* Using a Double Linked List [implemented here](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Double%20Linked%20List%20ADT) to create a tape consisting of blank cells that may possibly contain symbols.
+* Creating a pattern match algorithm that then allows the machine to (over)write a symbol to a cell, move the tape left or right by one cell at a time.
 
 
 ## Important Aspects and Limitations:
