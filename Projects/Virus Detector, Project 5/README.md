@@ -8,7 +8,7 @@ This program stores all the viruses written down in a .txt file (here, db.txt) a
 
 ## Criteria:
 
-* Implementing a Treap and BST (**Binary Search Trees**) ADT and using it to store a list of known viruses.
+* Using a Treap and BST (Binary Search Trees) ADT [implemented here](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Treap%20ADT) to store a list of known viruses.
 * Appropriately parsing through a binary file for viruses and reporting them, if any.
 
 
@@ -16,8 +16,8 @@ This program stores all the viruses written down in a .txt file (here, db.txt) a
 
 ### Database (.txt file):
 - The .txt file (here, db.txt) stores a virus/malware per line and is expressed as a binary string with a variable number of bytes. For example, 10010110 would denote a virus of one byte.
-- This database file can only contain three viruses. However, their sizes do not matter and can be changed.
-- The viruses are stored in a treap (**or tree heap**) by the program.
+- This database file can only contain three types of viruses. However, their sizes do not matter and can be changed.
+- The viruses are stored in a treap by the program.
 - The code and implementation for this can be found in the **detect.cpp** file.
 
 ### Infected binary file (.dat file):
@@ -33,4 +33,28 @@ This program stores all the viruses written down in a .txt file (here, db.txt) a
 - The implemented Treap ADT allows a user to check if a Treap is empty, to search for a particular key and the associated node, to insert a node, to remove a node and obtain the height of a treap.
 - The detailed code and implementation can be found in the **treap_bst.txx** file.
 
-### Running it locally:
+### Running it locally (on the Mac Terminal):
+
+- Add CMake to the path variable by running the following command in the Terminal:
+  ```
+  PATH="/Applications/CMake.app/Contents/bin":"$PATH
+  ```
+  
+- Then, generate the build and configuration files (it uses the CMakeLists.txt file that enlists the source, targets and executables) with this command:
+
+  ```
+  cmake .
+  ```
+  
+- This should create all the necessary configuration files and the executable. This project should have a **detect.cpp** file that detects the viruses and by running the   ```make``` command, the executable for this **detect.cpp** file is created.
+
+- Then run the generated executable. You run the detect executable as follows:
+
+  ```
+  ./detect list binfile
+  ```
+  
+  Here, 'list' would be **db.txt** that contains the list of viruses.
+  And, 'binfile' would be **sample.dat** which may possibly contain viruses within its bytes of data.
+  
+  
