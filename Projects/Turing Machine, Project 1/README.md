@@ -122,7 +122,7 @@ symbols
 
     - You move left and overwrite since there's a *c*. So, ```{a X X >c Y}``` becomes ```{a X X >Y Y}```
 
-    12. Repeat steps (viii to xi).
+    12. Repeat steps (viii to xi) till either the pattern successfully matches or false is definitively returned.
 
     Now, on repeating steps viii to xi you get the following:
     - Move left till you encounter X: ```{a X >X Y Y}``
