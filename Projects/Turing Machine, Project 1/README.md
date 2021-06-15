@@ -65,9 +65,16 @@ symbols
 
 #### Pattern Match:
 
-- The Turing Machine's tape consists of a set of legal symbols: {a, b, c}
-- The pattern match algorithm must be able to check whether the tape follows the *a<sup>i</sup>b<sup>j</sup>c<sup>j</sup>* pattern, where i, j >= 1 and are integers.
-- However, this pattern match algorithm must happen using only tape operations.
+  - The Turing Machine's tape consists of a set of legal symbols: {a, b, c}
+  - The pattern match algorithm must be able to check whether the tape follows the *a<sup>i</sup>b<sup>j</sup>c<sup>j</sup>* pattern, where i, j >= 1 and are integers.
+  - However, this pattern match algorithm must happen using only tape operations.
+
+    ##### Examples:
+    - Example 1: tape = {a b c} is a match as i = 1, j = 1
+    - Example 2: tape = {a b b c c} is a match as i = 1, j = 2
+    - Example 3: tape = {a b c c} is not a match as number of bs is not equal to the number of cs
+    - Example 4: tape = {b b c c} is not a match as i = 0
+    - Example 5: tape = {a b c a b c} is not a match as it doesn't match the *a<sup>i</sup>b<sup>j</sup>c<sup>j</sup>* pattern.
 
 ### Running it locally (on the Mac Terminal):
 
