@@ -66,7 +66,7 @@ symbols
 ### Pattern Match:
 
   - The Turing Machine's tape consists of a set of legal symbols: {a, b, c}
-  - The pattern match algorithm must be able to check whether the tape follows the *a<sup>i</sup>b<sup>j</sup>c<sup>j</sup>* pattern, where i, j >= 1 and are integers.
+  - The pattern match algorithm must be able to check whether the tape follows the *a<sup>i</sup> b<sup>j</sup> c<sup>j</sup>* pattern, where i, j >= 1 and are integers.
   - However, this pattern match algorithm must happen using only tape operations.
 
     #### Examples:
