@@ -1,0 +1,5 @@
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Turing Machine, Project 1/CMakeFiles/test.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Turing Machine, Project 1/CMakeFiles/submission.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Turing Machine, Project 1/CMakeFiles/rebuild_cache.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Turing Machine, Project 1/CMakeFiles/edit_cache.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Turing Machine, Project 1/CMakeFiles/unittests.dir
