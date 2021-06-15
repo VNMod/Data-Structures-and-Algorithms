@@ -78,18 +78,56 @@ symbols
 
     #### Algorithm:
     
+    For example, let's take:   ```{a b b c c}```
+    
     1. Check if first symbol is *a*. If not, then return false.
+
+    - ```{>a b b c c}``` passes this. 
+
     2. If this is true, move right as long as the current index is always lesser than the (tape size - 1).
     3. Now once all the *a* symbols have been encountered, check if the first symbol encoountered is a *b*.
+
+    - ```{a >b b c c}``` passes this. 
+   
     4. If it's a *b*, then write an *X* symbol in place and move right. If not, then return false.
+
+    - ```{a >b b c c}``` becomes ```{a >X b c c}```. 
+   
     5. This cell should now either be a *b* or *c*. If not, then return false.
+
+    - ```{a X >b c c}``` passes this. 
+
     6. While the current symbols are either *b* or *c* and the current index is always lesser than the (tape size - 1), move right and return false if any other characters are encountered.
-    7. Now, if the current symbol is a *c*, then write a *Y* symbol in place and move right. If not, then return false.
+
+    - So, you get ```{a X b c >c}```.
+
+    8. Now, if the current symbol is a *c*, then write a *Y* symbol in place and move right. If not, then return false.
+
+    - ```{a X b c >c}``` becomes ```{a X b c >Y}```. 
+
     8. Now, move left till you don't encounter an *X*.
+
+    - You're at X like this: ```{a >X b c Y}```.
+
     9. Then, move right and check if the symbol is either a *b* or *c*. If not, then *the pattern successfully matches*. 
-    11. Else if it is a *b* symbol, then overwrite an *X* and keep moving right till you encounter a Y symbol. If it's not a *b*, then return false.
-    12. Now, move left and overwrite a *Y* symbol if it priorly contained a *c* symbol. If not, then return false.
-    13. Repeat steps (viii to xi).
+
+    - Since ```{a X >b c Y}``` shows that we've encountered a *b* we move on.
+
+    10. Else if it is a *b* symbol, then overwrite an *X* and keep moving right till you encounter a Y symbol. If it's not a *b*, then return false.
+
+    - You overwrite to get: ```{a X >X c Y}```
+    - Then move right till you're at Y: ```{a X X c >Y}```
+
+    11. Now, move left and overwrite a *Y* symbol if it priorly contained a *c* symbol. If not, then return false.
+
+    - You move left and overwrite since there's a *c*. So, ```{a X X >c Y}``` becomes ```{a X X >Y Y}```
+
+    12. Repeat steps (viii to xi).
+
+    Now, on repeating steps viii to xi you get the following:
+    - Move left till you encounter X: ```{a X >X Y Y}``
+    - Now, move right and check if the symbol is either a *b* or *c*.
+    - Since the machine head points to neither a *b* or *c*, *the pattern successfully matches*.
 
 
 ### Running it locally (on the Mac Terminal):
