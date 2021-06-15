@@ -126,7 +126,7 @@ symbols
 
     Now, on repeating steps viii to xi you get the following:
     - Move left till you encounter X: ```{a X >X Y Y}```
-    - Now, move right and check if the symbol is either a *b* or *c*.
+    - Now, move right and check if the symbol is either a *b* or *c*: ```{a X X >Y Y}```
     - Since the machine head points to neither a *b* or *c*, *the pattern successfully matches*.
 
 
