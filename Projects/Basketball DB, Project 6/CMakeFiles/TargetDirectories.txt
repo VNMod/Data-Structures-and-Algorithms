@@ -1,0 +1,5 @@
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Basketball DB, Project 6/CMakeFiles/test.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Basketball DB, Project 6/CMakeFiles/submission.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Basketball DB, Project 6/CMakeFiles/rebuild_cache.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Basketball DB, Project 6/CMakeFiles/edit_cache.dir
+/Users/varunmodak/Desktop/GitHub Projects/Data-Structures-and-Algorithms/Projects/Basketball DB, Project 6/CMakeFiles/unittests.dir
