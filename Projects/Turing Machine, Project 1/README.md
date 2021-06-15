@@ -9,7 +9,7 @@ This program simulates a simple Turing Machine that solves a particuar algorithm
 ## Criteria:
 
 * Using a Double Linked List [implemented here](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Double%20Linked%20List%20ADT) to create a tape consisting of blank cells that may possibly contain symbols.
-* Creating a pattern match algorithm that then allows the machine to (over)write a symbol to a cell, move the tape left or right by one cell at a time without counters/sums or additional programming tricks (but loops and if statements are permitted).
+* Creating a pattern match algorithm that then allows the machine to (over)write a symbol to a cell, move the tape left or right by one cell at a time without counters/sums or additional programming tricks (but while loops and if statements are permitted).
 
 ## Important Aspects and Limitations:
 
