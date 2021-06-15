@@ -125,7 +125,7 @@ symbols
     12. Repeat steps (viii to xi) till either the pattern successfully matches or false is definitively returned.
 
     Now, on repeating steps viii to xi you get the following:
-    - Move left till you encounter X: ```{a X >X Y Y}``
+    - Move left till you encounter X: ```{a X >X Y Y}```
     - Now, move right and check if the symbol is either a *b* or *c*.
     - Since the machine head points to neither a *b* or *c*, *the pattern successfully matches*.
 
