@@ -1,4 +1,6 @@
-//Edited by: Varun Nimish Modak for P1.2 Data Structures and Algorithms
+// By Varun Nimish Modak for Project 1.2,
+// Data Structures and Algorithms, Virginia Tech
+
 #include "Tape.hpp"
 
 // Default constructor: Creates an empty tape (i.e. no Cell)

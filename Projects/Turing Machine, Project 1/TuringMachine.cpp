@@ -1,4 +1,6 @@
-//Edited by: Varun Nimish Modak for P1.2 Data Structures and Algorithms
+// By Varun Nimish Modak for Project 1.2,
+// Data Structures and Algorithms, Virginia Tech
+
 #include "TuringMachine.hpp"
 
 // Default constructor: creates an empty Turing machine.

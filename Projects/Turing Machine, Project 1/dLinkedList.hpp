@@ -1,9 +1,6 @@
-//
-//  dLinkedList.hpp
-//
-//
-//  Created by Tam Chantem on 9/8/20.
-//
+// Edited by Varun Nimish Modak for Project 1.1,
+// Data Structures and Algorithms, Virginia Tech
+
 #ifndef LINKED_LIST_
 #define LINKED_LIST_
 

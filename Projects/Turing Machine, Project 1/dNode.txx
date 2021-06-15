@@ -1,4 +1,5 @@
-//Edited by Varun Nimish Modak for Project 1.1
+// By Varun Nimish Modak for Project 1.2,
+// Data Structures and Algorithms, Virginia Tech
 
 #include "dNode.hpp"
 

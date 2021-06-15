@@ -1,9 +1,5 @@
-//
-//  Tape.hpp
-//
-//
-//  Created by Tam Chantem on 9/16/20.
-//
+// Edited by Varun Nimish Modak for Project 1.2,
+// Data Structures and Algorithms, Virginia Tech
 
 #ifndef Tape_hpp
 #define Tape_hpp

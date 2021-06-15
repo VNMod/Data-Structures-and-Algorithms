@@ -1,9 +1,5 @@
-//
-//  dNode.hpp
-//
-//
-//  Created by Tam Chantem on 9/8/20.
-//
+// Edited By Varun Nimish Modak for Project 1.2,
+// Data Structures and Algorithms, Virginia Tech
 
 #ifndef NODE_
 #define NODE_
