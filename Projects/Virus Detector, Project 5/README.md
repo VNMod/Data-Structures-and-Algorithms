@@ -16,7 +16,7 @@ This program stores all the viruses written down in a .txt file (here, db.txt) a
 
 ### Database (.txt file):
 - The .txt file (here, db.txt) stores a virus/malware per line and is expressed as a binary string with a variable number of bytes. For example, 10010110 would denote a virus of one byte.
-- This database file can only contain three viruses. However, their sizes do not matter and can be changed.
+- This database file can only contain three types of viruses. However, their sizes do not matter and can be changed.
 - The viruses are stored in a treap by the program.
 - The code and implementation for this can be found in the **detect.cpp** file.
 
