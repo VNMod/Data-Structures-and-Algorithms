@@ -10,7 +10,7 @@ This program creates a simple database for querying basketball statistics.
 
 * Reading a csv file containing the relevant basketball statistics
 * Building a database from these statistics using STL containers & iterators
-* Querying this database, with O(log n) complexity, to find all the games in which players exceed a single, or combination of, user-define statistical value(s).
+* Querying this database, with O(log n) complexity, to find all the games in which players exceed a single, or combination of, user-defined statistical value(s).
 
 ## Overview, Important Aspects and Limitations:
 
