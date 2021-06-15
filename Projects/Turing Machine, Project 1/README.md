@@ -85,10 +85,11 @@ symbols
     5. This cell should now either be a *b* or *c*. If not, then return false.
     6. While the current symbols are either *b* or *c* and the current index is always lesser than the (tape size - 1), move right and return false if any other characters are encountered.
     7. Now, if the current symbol is a *c*, then write a *Y* symbol in place and move right. If not, then return false.
-    8. Now, move left till you encounter an *X*.
-    9. Then, move right and check if the symbol is either a *b* or *c*. If you don't, then *the pattern successfully matches*. If not, then return false.
-    10. Else if it is a *b* symbol, then write X and keep moving right till you encounter a Y symbol.
-    11. Now, move left and overwrite a *Y* symbol if it priorly contained a *c* symbol. If not, then return false.
+    8. Now, move left till you don't encounter an *X*.
+    9. Then, move right and check if the symbol is either a *b* or *c*. If not, then *the pattern successfully matches*. 
+    11. Else if it is a *b* symbol, then overwrite an *X* and keep moving right till you encounter a Y symbol. If it's not a *b*, then return false.
+    12. Now, move left and overwrite a *Y* symbol if it priorly contained a *c* symbol. If not, then return false.
+    13. Repeat steps 8-12.
 
 
 ### Running it locally (on the Mac Terminal):
