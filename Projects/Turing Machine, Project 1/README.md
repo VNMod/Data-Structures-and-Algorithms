@@ -1,4 +1,4 @@
-# virus_detector
+# turing-machine
 
 ### Date: September 2020
 
@@ -11,27 +11,63 @@ This program simulates a simple Turing Machine that solves a particuar algorithm
 * Using a Double Linked List [implemented here](https://github.com/VNMod/Data-Structures-and-Algorithms/tree/main/Data%20Structures/Double%20Linked%20List%20ADT) to create a tape consisting of blank cells that may possibly contain symbols.
 * Creating a pattern match algorithm that then allows the machine to (over)write a symbol to a cell, move the tape left or right by one cell at a time.
 
-
 ## Important Aspects and Limitations:
 
-### Database (.txt file):
-- The .txt file (here, db.txt) stores a virus/malware per line and is expressed as a binary string with a variable number of bytes. For example, 10010110 would denote a virus of one byte.
-- This database file can only contain three types of viruses. However, their sizes do not matter and can be changed.
-- The viruses are stored in a treap by the program.
-- The code and implementation for this can be found in the **detect.cpp** file.
+### General Overview:
 
-### Infected binary file (.dat file):
-- The .dat file (here, sample.dat) contains several bytes of data, and may contain several viruses.
-- This program reports any detected instances of the viruses as stored within the **treap**.
-- If no viruses have been found, then the program prints out: No viruses/malware found!
-- The code and implementation for this can be found in the **detect.cpp** file.
+It consists of:
 
-### Implementing the Treap (Tree Heap) Data Structure:
-- Treaps are a type of self-balancing trees called heaps that balance themselves on the basis of randomly generated priority values via transformations/rotations. 
-- They're also binary search trees and thus left and right subtrees of each node must be binary search trees. The distinctive property of a binary search tree is that the left subtree of a node must only contain nodes with keys lesser than that node's key AND the right subtree must only contain nodes with keys greater than that node's key.
-- Thus each node within a treap has three associated properties: key, value and priority. In summary, **keys are for maintaining BST properties** and **priorities are for maintaining max Heap properties**. **Value is the actual data to be stored in a node**.
-- The implemented Treap ADT allows a user to check if a Treap is empty, to search for a particular key and the associated node, to insert a node, to remove a node and obtain the height of a treap.
-- The detailed code and implementation can be found in the **treap_bst.txx** file.
+- a tape (potentially of infinite length) consisting of cells that can be blank or contain a symbol (one symbol per cell).
+- an algorithm
+
+Note: Turing Machines do not have any extra memory to keep a counter or do sum operations, etc.
+
+### Tape:
+
+The key operations on a tape are:
+
+- Move Right
+- Move Left
+- Read Symbol
+- Write Symbol
+
+The Tape class (in Tape.hpp, Tape.cpp) support:
+
+- a default constructor that creates an empty tape
+- a construction of a tape initialized with symbols in its cells (one cell per symbol) • a copy constructor
+- a destructor
+- a method to get the number of cells in the tape
+- a method to get the current cell, i.e., where the head currently points to
+- a method to set the tape content
+- a method to determine if the tape is empty
+- a method to move the head right by one cell
+- a method to move the head left by one cell
+- a method to write a blank symbol to the current cell
+- a method to write a specified symbol to the current cell • method to read the symbol from the current cell
+- a method to clear the tape, i.e., make it empty
+- a method to print out the content of the tape
+- a method to rewind the tape to the first cell
+
+### Turing Machine:
+
+The Turing Machine class support:
+
+- a default constructor that creates an empty Turing machine, i.e., empty tape and empty list of legal
+symbols
+- a parameterized constructor
+- a destructor
+- a method to get the list of legal symbols
+- a method to get the tape
+- a method to set the list of legal symbols
+- a method to set the tape
+- a method to reset the machine, i.e., empty tape and empty list of legal symbols • method to check if the setup is legal (see below)
+- a methods to match pattern (see below)
+
+#### Pattern Match:
+
+- The Turing Machine's tape consists of a set of legal symbols: {a, b, c}
+- The pattern match algorithm must be able to check whether the tape follows the *a<sup>i</sup>b<sup>j</sup>c<sup>j</sup>* pattern, where i, j >= 1 and are integers.
+- However, this pattern match algorithm must happen using only tape operations.
 
 ### Running it locally (on the Mac Terminal):
 
@@ -46,15 +82,12 @@ This program simulates a simple Turing Machine that solves a particuar algorithm
   cmake .
   ```
   
-- This should create all the necessary configuration files and the executable. This project should have a **detect.cpp** file that detects the viruses and by running the   ```make``` command, the executable for this **detect.cpp** file is created.
+- This should create all the necessary configuration files and the executable. This project should have a **unittests.cpp** file that contains the unit test cases for all the methods and by running the   ```make``` command, the executable for this **unittests.cpp** file is created.
 
 - Then run the generated executable. You run the detect executable as follows:
 
   ```
-  ./detect list binfile
+  ./unittests
   ```
-  
-  Here, 'list' would be **db.txt** that contains the list of viruses.
-  And, 'binfile' would be **sample.dat** which may possibly contain viruses within its bytes of data.
   
   
