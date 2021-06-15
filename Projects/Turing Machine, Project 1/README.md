@@ -63,18 +63,33 @@ symbols
 - a method to reset the machine, i.e., empty tape and empty list of legal symbols • method to check if the setup is legal (see below)
 - a methods to match pattern (see below)
 
-#### Pattern Match:
+### Pattern Match:
 
   - The Turing Machine's tape consists of a set of legal symbols: {a, b, c}
   - The pattern match algorithm must be able to check whether the tape follows the *a<sup>i</sup>b<sup>j</sup>c<sup>j</sup>* pattern, where i, j >= 1 and are integers.
   - However, this pattern match algorithm must happen using only tape operations.
 
-    ##### Examples:
+    #### Examples:
     - Example 1: tape = {a b c} is a match as i = 1, j = 1
     - Example 2: tape = {a b b c c} is a match as i = 1, j = 2
     - Example 3: tape = {a b c c} is not a match as number of bs is not equal to the number of cs
     - Example 4: tape = {b b c c} is not a match as i = 0
     - Example 5: tape = {a b c a b c} is not a match as it doesn't match the *a<sup>i</sup>b<sup>j</sup>c<sup>j</sup>* pattern.
+
+    #### Algorithm:
+    
+    1. Check if first symbol is *a*. If not, then return false.
+    2. If this is true, move right as long as the current index is always lesser than the (tape size - 1).
+    3. Now once all the *a* symbols have been encountered, check if the first symbol encoountered is a *b*.
+    4. If it's a *b*, then write an *X* symbol in place and move right. If not, then return false.
+    5. This cell should now either be a *b* or *c*. If not, then return false.
+    6. While the current symbols are either *b* or *c* and the current index is always lesser than the (tape size - 1), move right and return false if any other characters are encountered.
+    7. Now, if the current symbol is a *c*, then write a *Y* symbol in place and move right. If not, then return false.
+    8. Now, move left till you encounter an *X*.
+    9. Then, move right and check if the symbol is either a *b* or *c*. If you don't, then *the pattern successfully matches*. If not, then return false.
+    10. Else if it is a *b* symbol, then write X and keep moving right till you encounter a Y symbol.
+    11. Now, move left and overwrite a *Y* symbol if it priorly contained a *c* symbol. If not, then return false.
+
 
 ### Running it locally (on the Mac Terminal):
 
