@@ -89,7 +89,7 @@ symbols
     9. Then, move right and check if the symbol is either a *b* or *c*. If not, then *the pattern successfully matches*. 
     11. Else if it is a *b* symbol, then overwrite an *X* and keep moving right till you encounter a Y symbol. If it's not a *b*, then return false.
     12. Now, move left and overwrite a *Y* symbol if it priorly contained a *c* symbol. If not, then return false.
-    13. Repeat steps (viii to xii)
+    13. Repeat steps (viii to xi).
 
 
 ### Running it locally (on the Mac Terminal):
