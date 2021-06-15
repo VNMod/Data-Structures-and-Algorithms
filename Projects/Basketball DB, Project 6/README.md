@@ -21,7 +21,7 @@ This program creates a simple database for querying basketball statistics.
 
 ### BBDB:
 
-Important Note: Once data has been loaded into memory, it cannot be sorted using any sorting algorithm.
+**Important Note**: Once data has been loaded into memory, it cannot be sorted using any sorting algorithm.
 
 #### Player (struct in bbdp.hpp, bbdp.cpp):
 
