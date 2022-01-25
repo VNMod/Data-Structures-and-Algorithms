@@ -27,10 +27,14 @@ The minimax algorithm requires that we:
   1. q is a double-ended queue/deque, 
   2. enqueue the current state of the game to q, 
   3. while q is not empty,
-  a. pop the game state from the front of the q, 
-  b. mark the game state as visited, 
-  c. if the game state is terminal (i.e. results in the game ending) mark the score for the state, 
-  d. else enqueue every possible state based on the available moves of the current player (i.e. enqueue all the possible moves for the player)
+    a. pop the game state from the front of the q, 
+    
+    b. mark the game state as visited, 
+    
+    c. if the game state is terminal (i.e. results in the game ending) mark the score for the state, 
+    
+    d. else enqueue every possible state based on the available moves of the current player (i.e. enqueue all the possible moves for the player)
+    
 
 
 ### BoardXO:
