@@ -27,6 +27,7 @@ The minimax algorithm requires that we:
   1. q is a double-ended queue/deque, 
   2. enqueue the current state of the game to q, 
   3. while q is not empty,
+ 
     a. pop the game state from the front of the q, 
     
     b. mark the game state as visited, 
