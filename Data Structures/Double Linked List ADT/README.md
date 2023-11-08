@@ -45,7 +45,8 @@ The dLinkedList class supports:
 - methods to add a new entry to the list
 - methods to remove an entry from the list
 - a method to clear (empty) the list
-- a method to determine the number of times an entry appears in the list • method to determine whether the list contains a given entry
+- a method to determine the number of times an entry appears in the list
+- a method to determine whether the list contains a given entry
 - a method to replace an entry
 
 
